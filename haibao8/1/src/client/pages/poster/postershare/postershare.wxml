@@ -1,0 +1,21 @@
+<view class="postershare-body">
+  <image class="postershare-img" src="{{posterPic}}" catchtap="onCanvasImageClick"></image>
+</view>
+
+<view class="postershare-footer">
+  <view class="postershare-footer-container">
+    <view wx:if="{{isWritePhotosAlbum}}" class="postershare-download" bindtap="onDownloadPic">
+      下载图片
+    </view>
+    <view wx:else class="postershare-download">
+      <button class="postershare-btnopenset" open-type="openSetting" bindopensetting="onOpenSetting" id="btnOpenSet"></button>
+      <label class="postershare-lable" for="btnOpenSet">
+        <view class="postershare-openset">授权</view>
+      </label>
+    </view>
+    <button class="postershare-btnshare" open-type="share" id="btnShare"></button>
+    <label class="postershare-lable" for="btnShare">
+      <view class="postershare-share">分享</view>
+    </label>
+  </view>
+</view>

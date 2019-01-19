@@ -1,0 +1,7 @@
+<template name="posterTemplate">
+    <view class="poster-pro-container">
+        <image bindtap="onPosterEditTap" class="poster-pro-img" src="{{item.thumbUrl}}" data-posterpro="{{item}}"/>
+        <image wx:if="{{item.editIsShow}}" bindtap="onPosterEditTap" class="poster-pro-editicon" src="/images/edit.png"  data-posterpro="{{item}}" mode="aspectFit"/>
+        <image wx:if="{{item.removeIsShow}}" bindtap="onRemovePoster" class="poster-image-remove" src="/images/remove.png" data-posterpro="{{item}}" mode="aspectFit"/>    
+    </view>
+</template>

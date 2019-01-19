@@ -1,0 +1,10 @@
+<import src="../poster-tmpl/poster.wxml"/>
+<template name="postGridTemplate">
+  <scroll-view class="grid-container" scroll-y="true" scroll-x="false" bindscrolltolower="onScrollLower">
+    <block wx:for="{{posterList}}"  wx:key="key">
+      <!-- <view class="single-view-container"> -->
+        <template is="posterTemplate" data="{{item}}" />
+      <!-- </view> -->
+    </block>
+  </scroll-view>
+</template>

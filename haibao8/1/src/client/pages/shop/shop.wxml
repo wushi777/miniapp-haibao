@@ -1,0 +1,33 @@
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{swiperImgList}}" wx:key="key">
+    <swiper-item>
+      <image class="slide-image" src="{{item.shopSlideUrl}}" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="hr"></view>
+
+<!-- <scroll-view class='tag-list'>
+  <view class='tag-item' wx:for='{{shopTagList}}' data-classId='{{index}}' wx:key="key">
+    <button class='tag-btn' bindtap="onTagBtnClick">{{item.shopTagName}}</button>
+  </view>
+</scroll-view>
+
+<view class="hr-area"></view> -->
+
+<view class='shop-item-list'>
+  <block wx:for='{{shopCatsList}}' wx:key="key">
+    <view class='shop-item' bindtap='onDetail' data-id="{{item.accountID}}" data-shopname="{{item.shopName}}">
+      <image class='shop-logo' src='{{item.logoUrl}}'></image>
+      <view class='shop-body'>
+        <view class='shop-name'>{{item.shopName}}</view>
+        <view class='shop-address'>{{item.shopAddress}}</view>
+        <text class='shop-desc'>{{item.shopDesc}}</text>
+      </view>
+    </view>
+    <view class="hr"></view>
+  </block>
+</view>
+
+<button class='shop-join-btn' bindtap='onShopJoin'>免费入驻</button>

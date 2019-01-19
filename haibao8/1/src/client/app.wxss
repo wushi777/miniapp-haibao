@@ -1,0 +1,11 @@
+.hr {
+    height: 2rpx;
+    width: 100%;
+    background-color: #F3F3F3;
+}
+
+.hr-area {
+    height: 6rpx;
+    width: 100%;
+    background-color: #F3F3F3;
+}

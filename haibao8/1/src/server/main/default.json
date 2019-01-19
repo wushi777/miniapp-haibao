@@ -1,0 +1,167 @@
+{
+    "posterSlides": [
+        { "name": "1", "url": "/temp/1.jpg" },
+        { "name": "2", "url": "/temp/2.jpg" },
+        { "name": "3", "url": "/temp/3.jpg" }
+    ],
+
+    "posterCats": [
+        {
+            "name":     "餐饮1",
+            "desc":     "",
+            "hotspot":  true
+        },
+        
+        {
+            "name":     "服装1", 
+            "desc":     "",
+            "hotspot":  true
+        },
+        
+        {
+            "name":     "电器1", 
+            "desc":     "",
+            "hotspot":  false
+        },
+        
+        {
+            "name":     "百货1",
+            "desc":     "",
+            "hotspot":  false
+        }
+    ],
+
+    "posters": [
+        { 
+            "name":       "1", 
+            "posterUrl":  "/temp/poster-001.png"
+        },
+
+        { 
+            "name":       "2", 
+            "posterUrl":  "/temp/poster-002.png"
+        },
+
+        { 
+            "name":       "3", 
+            "posterUrl":  "/temp/poster-003.png" 
+        },
+
+        { 
+            "name":       "4", 
+            "posterUrl":  "/temp/poster-004.png" 
+        },
+
+        { 
+            "name":       "5", 
+            "posterUrl":  "/temp/poster-005.png"
+        },
+
+        { 
+            "name":       "6", 
+            "posterUrl":  "/temp/poster-006.png"
+        },
+
+        { 
+            "name":       "7", 
+            "posterUrl":  "/temp/poster-007.png" 
+        },
+
+        { 
+            "name":       "8", 
+            "posterUrl":  "/temp/poster-008.png"
+        },
+
+        { 
+            "name":       "9", 
+            "posterUrl":  "/temp/poster-001.png"
+        },
+
+        { 
+            "name":       "10", 
+            "posterUrl":  "/temp/poster-002.png"
+        },
+
+        { 
+            "name":       "11", 
+            "posterUrl":  "/temp/poster-003.png" 
+        },
+
+        { 
+            "name":       "12", 
+            "posterUrl":  "/temp/poster-004.png"
+        },
+
+        { 
+            "name":       "13", 
+            "posterUrl":  "/temp/poster-005.png"
+        },
+
+        { 
+            "name":       "14", 
+            "posterUrl":  "/temp/poster-006.png"
+        },
+
+        { 
+            "name":       "15", 
+            "posterUrl":  "/temp/poster-007.png"
+        },
+
+        { 
+            "name":       "16", 
+            "posterUrl":  "/temp/poster-008.png"
+        }
+    ],
+
+    "shopSlides": [
+        { "name": "1", "url": "/temp/1.jpg" },
+        { "name": "2", "url": "/temp/2.jpg" },
+        { "name": "3", "url": "/temp/3.jpg" }
+    ],
+
+    "shopCats": [
+        {
+            "name":     "餐饮",
+            "desc":     "",
+            "hotspot":  true
+        },
+        
+        {
+            "name":     "服装", 
+            "desc":     "",
+            "hotspot":  true
+        },
+        
+        {
+            "name":     "电器", 
+            "desc":     "",
+            "hotspot":  false
+        },
+        
+        {
+            "name":     "百货",
+            "desc":     "",
+            "hotspot":  false
+        }
+    ],
+
+    "shops": [
+        { 
+            "name":       "灶台鱼",       
+            "desc":       "爱上的积分卡士大夫\ntest",  
+            "shopUrl":    "/temp/shop_01.jpg"
+        },
+
+        { 
+            "name":       "韩国烧烤",     
+            "desc":       "test胜多负少\n水电费",     
+            "shopUrl":    "/temp/shop_02.jpg"
+        },
+
+        { 
+            "name":       "沙县小吃",     
+            "desc":       "第三方士大夫士大夫是",       
+            "shopUrl":    "/temp/shop_01.jpg"
+        }   
+    ]
+}

@@ -1,0 +1,50 @@
+@size0:   0;
+@size10:  10px;
+@colofff: #fff;
+
+body{
+    .installBox{
+        padding:                20px 0;
+        font-size: 16px;
+        h1{
+            width:              110px;
+            margin:             @size0 auto;
+            margin-bottom:      @size10 * 2;
+        }
+        h2{
+            text-align:        center;
+        }
+        .install {
+            min-height:         @size10 * 53;
+            border-radius:      @size10;
+            width:              @size10 * 120;
+            margin:             @size0 auto;
+            background:         @colofff;
+            padding:            20px 40px 40px 40px;
+        }   
+        .form-button {
+            text-align:         center;
+            .ant-btn-primary{
+                color:          @colofff;
+            }
+        }
+        .form-addCluster{
+            margin-top:         50px;
+        }
+        .form-addClusterButton{
+            .ant-btn-primary{
+                color:          @colofff;
+            }
+        }
+        .form-reset {
+            margin-left:        @size10;
+        }    
+        .ant-btn {
+            padding:            @size0 (@size10 * 3);
+        }
+    }
+    .setting-area {
+        border: 1px solid lightblue;
+        padding: 10px;
+    }
+}

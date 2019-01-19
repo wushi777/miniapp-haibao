@@ -1,0 +1,47 @@
+page {
+    background-color: #F3F3F3;
+    height: 100%;
+    font-size: 32rpx;
+    line-height: 1.6;
+}
+
+.userinfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0 4rpx 0;
+    background-color: white;
+}
+
+.userinfo-register {
+    width: 200rpx;
+    height: 40rpx;
+    margin: 0rpx;
+    padding: 10rpx;
+    border-radius: 15rpx;
+    line-height: 1;
+    font-size: 25rpx;
+    background-color: rgb(248, 151, 57);
+}
+
+.userinfo-avatar {
+    width: 128rpx;
+    height: 128rpx;
+    margin: 20rpx;
+    border-radius: 50%;
+}
+
+.userinfo-nickname {
+    color: #aaa;
+}
+
+.mine-container {
+    margin: 0;
+    padding: 0;
+}
+
+.mine-item {
+    margin: 0 0 4rpx 0;
+    padding: 10rpx;
+    background-color: white;
+}

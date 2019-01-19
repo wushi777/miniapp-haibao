@@ -1,0 +1,35 @@
+.poster-pro-container {
+    position: relative;
+    height: 320rpx;
+    width: 200rpx;
+    margin: 0 18rpx 10rpx;
+    padding: 0;
+    display: inline-block;
+}
+
+.poster-pro-img {
+    width: 200rpx;
+    height: 320rpx;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #888888;
+}
+
+.poster-pro-editicon {
+    position: absolute;
+    width: 80rpx;
+    height: 80rpx;
+    left: 60rpx;
+    top: 120rpx;
+    opacity: 0.6;
+}
+
+.poster-image-remove {
+    float: right;
+    width: 30rpx;
+    height: 30rpx;
+    position: absolute;
+    right: -10rpx;
+    top: -10rpx;
+    border-radius: 50%;
+    opacity: 0.8;
+}

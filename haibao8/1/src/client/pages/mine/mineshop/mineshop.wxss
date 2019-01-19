@@ -1,0 +1,68 @@
+page {
+    background-color: #F3F3F3;
+    height: 100%;
+    font-size: 32rpx;
+    line-height: 1.6;
+}
+
+.mine-shop-head {
+    height: 300rpx;
+    background-color: rgb(248, 151, 57)
+}
+
+.mine-shop-title {
+    display: flex;
+    align-items: center;
+}
+
+.mine-shop-logo {
+    width: 128rpx;
+    height: 128rpx;
+    margin: 20rpx;
+    border-radius: 50%;
+}
+
+.mine-shop-shopname {
+    color: white;
+}
+
+.mine-shop-data {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.mine-shop-data-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10rpx;
+    color: white
+}
+
+.mine-shop-set-lable {
+    margin: 0 0 4rpx 0;
+    padding: 10rpx;
+    background-color: white;
+}
+
+.mine-shop-set {
+    margin: 0 0 4rpx 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.mine-shop-set-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20rpx;
+    color: black;
+}
+
+.mine-shop-set-item-logo {
+    width: 50rpx;
+    height: 50rpx;
+}

@@ -1,0 +1,5 @@
+@import "../poster-tmpl/poster.wxss";
+.grid-container {
+    margin-top: 18rpx;
+    padding: 0;
+}

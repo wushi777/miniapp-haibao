@@ -1,0 +1,195 @@
+page {
+    background-color: #F3F3F3;
+    height: 100%;
+    font-size: 32rpx;
+    line-height: 1.6;
+}
+
+.shop-detail-logo {
+    height: 320rpx;
+    width: 100%;
+    vertical-align: top;
+}
+
+.shop-detail-shopname-container {
+    height: 120rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 4rpx 0 4rpx 0;
+    background-color: white;
+}
+
+.shop-detail-shopname {
+    height: 60rpx;
+}
+
+.shop-detail-collect {
+    width: 100rpx;
+    text-align: center;
+    border-radius: 15rpx;
+    font-size: 28rpx;
+    background-color: rgb(248, 151, 57);
+    color: white;
+}
+
+.shop-detail-address-container {
+    height: 120rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    margin: 0 0 4rpx 0;
+    position: relative;
+}
+
+.shop-detail-address {
+    margin: 20rpx;
+    width: 630rpx;
+}
+
+.shop-detail-address-img {
+    width: 100rpx;
+    height: 100rpx;
+    position: absolute;
+    right: 20rpx;
+}
+
+.shop-detail-share-container {
+    background-color: black;
+    opacity: 0.6;
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: fixed;
+    top: 710rpx;
+    right: 20rpx;
+    color: white;
+    z-index: 50;
+}
+
+.shop-detail-share-img {
+    width: 40rpx;
+    height: 40rpx;
+}
+
+.shop-detail-share-caption {
+    font-size: 25rpx;
+}
+
+.shop-detail-button-share {
+    display: none;
+}
+
+.shop-detail-contact-container {
+    height: 120rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    margin: 0 0 4rpx 0;
+    position: relative;
+}
+
+.shop-detail-contact-logo {
+    width: 100rpx;
+    height: 100rpx;
+    margin: 20rpx;
+    border-radius: 50%;
+}
+
+.shop-detail-contact-desc2 {
+    font-size: 28rpx;
+    color: #ccc;
+}
+
+.shop-detail-contact-phonenumber {
+    width: 60rpx;
+    height: 60rpx;
+    position: absolute;
+    right: 40rpx;
+}
+
+.shop-detail-shopdesc-container {
+    padding: 20rpx;
+    margin: 0 0 4rpx 0;
+    background-color: white;
+}
+
+.shop-detail-shopdesc-title {
+    height: 100rpx;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100rpx;
+}
+
+.shop-detail-shopdesc-image {
+    width: 100%;
+}
+
+.shop-detail-shopqrcode-container {
+    background-color: white;
+    margin: 20rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.shop-detail-shopqrcode-img {
+    width: 300rpx;
+    height: 300rpx;
+}
+
+.shop-detail-pic-share-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* background-color: black;
+    opacity: 0.6; */
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.share-canvas {
+    position: absolute;
+    opacity: 0;
+    height: 70%;
+    width: 80%;
+    background-color: #fff;
+}
+
+.share-canvas-img {
+    height: 70%;
+    width: 80%;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+.shop-detail-pic-share-tip {
+    margin: 20rpx;
+    color: white;
+}
+
+.shop-detail-pic-share-close {
+    width: 48rpx;
+    height: 48rpx;
+}

@@ -1,0 +1,66 @@
+{
+	"client": "bin/client/",
+	"svr": "bin/server/",
+	"miniprogramRoot": "bin/client/",
+	"qcloudRoot": "bin/server/",
+	"setting": {
+		"urlCheck": false,
+		"es6": false,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"appid": "wx65cc8df8f971f467",
+	"projectname": "sphb2",
+	"compileType": "miniprogram",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 1,
+			"list": [
+				{
+					"id": -1,
+					"name": "mine",
+					"pathName": "pages/mine/mine",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "poster",
+					"pathName": "pages/poster/postereditor/postereditor",
+					"query": "id=1&posterurl=https://bj-1257315987.cos.ap-beijing.myqcloud.com/20180927/342a8c0c4630ddc1212b4afd73597203.png"
+				},
+				{
+					"id": -1,
+					"name": "id",
+					"pathName": "pages/index/index",
+					"query": "id=11",
+					"scene": "1035",
+					"referrerInfo": {
+						"appId": "wxf7973420a0c616c8"
+					}
+				},
+				{
+					"id": -1,
+					"name": "addshop",
+					"pathName": "pages/shop/shopeditor/shopeditor",
+					"query": ""
+				}
+			]
+		}
+	}
+}

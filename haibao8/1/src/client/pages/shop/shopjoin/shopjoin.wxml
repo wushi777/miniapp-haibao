@@ -1,0 +1,55 @@
+<view class="shop-join-head">
+    <image class="head-img" src="/images/image_artist@2x.png" />
+    <text class="head-titel">请填写店铺信息</text>
+</view>
+<view class="shop-join-body">
+    <form bindsubmit='onSubmit'>
+        <view class="shop-input-container">
+            <view class="shop-input-lable">上传图片</view>
+            <view wx:if="{{logoUrl==''}}" class="shop-logourl-input" bindtap="onChooseLogoImage"></view>
+            <block wx:else>
+                <image class="shop-image" src="{{logoUrl}}" bindtap="onChooseLogoImage" mode="aspectFit"></image>
+            </block>
+        </view>
+
+        <view class="shop-input-container">
+            <view class="shop-input-lable">店铺名称</view>
+            <input class="shop-input" name="shopname" value="{{shopName}}" placeholder="请输入店铺名称"/>
+        </view>
+
+        <view class="shop-input-container">
+            <view class="shop-input-lable">店铺地址</view>
+            <input class="shop-input-short" name="shopaddress" value="{{shopAddress}}" placeholder="请输入店铺地址"/>
+            <image class="shop-address-location-img" src="/images/location.png" bindtap='onChooseLocation' />
+        </view>
+
+        <view class="shop-input-area-container">
+            <view class="shop-input-lable">店铺简介</view>
+            <textarea class="shop-input" name="shopdesc" value="{{shopDesc}}" placeholder="请输入店铺简介" />
+        </view>
+
+        <view class="shop-input-container">
+            <view class="shop-input-lable">电话</view>
+            <input class="shop-input" name="shopPhoneNumber" value="{{phoneNumber}}" placeholder="请输入电话"/>
+        </view>
+
+        <view class="shop-input-area-container">
+            <view class="shop-input-lable">店铺图片</view>
+            <view class="shop-input-pic">
+                <view class="shop-image-container" wx:for="{{shopImages}}" wx:key="key">
+                    <image class="shop-image-remove" src="/images/remove.png" data-index="{{index}}" bindtap="onRemoveShopImage" mode="aspectFit"></image>
+                    <image class="shop-image" src="{{item}}" mode="scaleToFill"></image>
+                </view>
+                <view wx:if="{{shopImages.length<9}}" class="shop-logourl-input" bindtap="onChooseShopImage"></view>
+            </view>
+        </view>
+
+        <view class="shop-input-container"  bindtap="onSelectShopCat">
+            <view class="shop-input-lable">店铺分类</view>
+            <input class="shop-input" name="shopCat" value="{{shopCatName}}" placeholder="选择分类" disabled="{{true}}"/>
+            <image class="arrow-right-img" src="/images/arrow-right.png"/>
+        </view>
+
+        <button class="shop-submit" form-type='submit'>{{shopSubmitCaption}}</button>
+    </form>
+</view>

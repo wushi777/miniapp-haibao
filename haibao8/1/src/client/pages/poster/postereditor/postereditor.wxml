@@ -1,0 +1,22 @@
+<view class="posteredit-body">
+  <image class="posteredit-img" src="{{posterUrl}}"></image>
+  <block wx:for="{{posterData}}" wx:key="{{item.id}}">
+    <view wx:if="{{item.isText}}" class="posteredit-input" style="{{item.inputStyle}}" data-text="{{item.inputText}}" data-id="{{item.id}}" data-istext="{{item.isText}}" bindtap="onShowTipInput">
+      <text id="{{item.name}}" class="posteredit-input-text">{{item.inputText}}</text>
+    </view>
+    <view wx:else class="posteredit-input" style="{{item.inputStyle}}" data-text="{{item.inputText}}" data-id="{{item.id}}" data-type="{{item.inputType}}" bindtap="onShowTipInput">
+      <image id="{{item.name}}" src="{{item.imagePath}}" style="{{item.imageStyle}}"></image>
+    </view>
+  </block>
+  <view class="posteredit-canvas-container">
+    <canvas class="share-canvas" canvas-id="shareCanvas"></canvas>
+  </view>
+</view>
+
+<view class="posteredit-footer">
+  <TipInput id="TipInput" bind:btnOKClickEvent="onInputOK"></TipInput>
+  <view class="posteredit-footer-container">
+    <view class="posteredit-generateposter" bindtap="onGeneratePoster">生成海报</view>
+    <view class="posteredit-collect" bindtap="onPosterCollect">收藏</view>
+  </view>
+</view>

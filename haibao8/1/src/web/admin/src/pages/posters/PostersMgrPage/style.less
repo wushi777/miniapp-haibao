@@ -1,0 +1,181 @@
+@media screen and (max-width: 1400px)  {
+    html body {
+        .posterPage {
+            .addPoster{
+                height: 32px;
+            }
+            .posterTitle {
+                .ant-input-affix-wrapper{
+                    font-size: 14px;
+                    width: 250px;
+                    .ant-input{
+                        height: 32px;
+                    }
+                }
+            }
+            .ant-table-wrapper{
+                table {
+                    .ant-table-thead > tr > th,
+                    .ant-table-tbody > tr > td{
+                        font-size: 14px;
+                        padding: 0 6px;
+                    }
+                    .ant-table-thead > tr > th:nth-child(1),
+                    .ant-table-tbody > tr > td:nth-child(1),
+                    .ant-table-thead > tr > th:nth-child(2),
+                    .ant-table-tbody > tr > td:nth-child(2),
+                    .ant-table-thead > tr > th:nth-child(5),
+                    .ant-table-tbody > tr > td:nth-child(5),{
+                        max-width: 125px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    } 
+                    .ant-table-thead > tr > th:nth-child(2),
+                    .ant-table-tbody > tr > td:nth-child(2){
+                        max-width: 88px;
+                    }
+                    .ant-table-thead > tr > th:nth-child(5),
+                    .ant-table-tbody > tr > td:nth-child(5){
+                        max-width: 308px;
+                    }
+                }
+            }
+            .ant-btn{
+                height: 32px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1024px) {
+    html body {
+        .ant-layout-content .posterPage {
+            .addPoster{
+                margin: 15px 0;
+            }
+            .posterTitle .ant-input-affix-wrapper{
+                margin-top: 15px;
+            }
+            .ant-table-wrapper  table{
+                .ant-table-thead > tr > th,
+                .ant-table-tbody > tr > td{
+                    height: 48px;
+                    &:nth-child(1),
+                    &:nth-child(1),
+                    {
+                        width: 10%;
+                        max-width: 99px;
+                    }
+                    &:nth-child(2),
+                    &:nth-child(2){
+                        width:8%;
+                    }
+                    &:nth-child(3),
+                    &:nth-child(3)    
+                    {
+                        width: 10%;
+                    }
+                    &:nth-child(4),
+                    &:nth-child(4){
+                        width: 10%;
+                    }
+                    &:nth-child(5),
+                    &:nth-child(5){
+                        width: 20%;
+                    }
+                }
+            }
+        }
+    }
+}
+body {
+    .posterPage{
+        padding: 0 20px;
+        .addPoster{
+            margin: 20px 0;
+            height: 40px;
+            &.ant-btn-primary:hover,
+            &.ant-btn-primary:focus{
+                background-color: #43Bc99;
+                border-color: #43Bc99;
+            }
+            &.after{
+                display: none;
+            }
+        }
+        .posterTitle{
+            .ant-input-affix-wrapper{
+                font-size: 16px;
+                width: 300px;
+                float: right;
+                margin-top: 20px;
+                .ant-input{
+                    height: 40px;
+                }
+            }
+        }
+        .ant-table-wrapper{
+            table {
+                .ant-table-thead > tr > th,
+                .ant-table-tbody > tr > td{
+                    font-size: 16px;
+                    text-align: center;
+                    color: #333;
+                    padding: 0 16px;
+                    height: 60px;
+                }
+                .ant-table-thead > tr > th,
+                .ant-table-tbody > tr > td{
+                    &:nth-child(1),
+                    &:nth-child(2),
+                    &:nth-child(3){
+                        text-align: left;
+                    }
+                }
+                .ant-table-thead > tr > th:nth-child(1),
+                .ant-table-tbody > tr > td:nth-child(1){
+                    width: 18%;
+                }
+                .ant-table-thead > tr > th:nth-child(2),
+                .ant-table-tbody > tr > td:nth-child(2){
+                    width: 11%;
+                }
+                .ant-table-thead > tr > th:nth-child(3),
+                .ant-table-tbody > tr > td:nth-child(3){
+                    width: 7%;
+                }
+                .ant-table-thead > tr > th:nth-child(4),
+                .ant-table-tbody > tr > td:nth-child(4){
+                    width: 10%;
+                }
+
+                .ant-table-thead > tr > th:nth-child(5),
+                .ant-table-tbody > tr > td:nth-child(5){
+                    width: 25%;
+                }
+                .ant-btn{
+                    &.ant-btn-primary:hover,
+                    &.ant-btn-primary:focus{
+                        background-color: #43Bc99;
+                        border-color: #43Bc99;
+                    }
+                }
+            }
+        }
+        .ant-btn{
+            background: #43Bc99;
+            height: 40px;
+            border-color: #43Bc99;
+        }
+        .ant-input,
+        .ant-pagination-options-quick-jumper input{
+            color: #333;
+        }
+        .ant-pagination-options-quick-jumper input:hover{
+            border-color: #0a9ad8;
+        }
+        .ant-pagination-options-quick-jumper input:focus{
+            border-color: #0a9ad8;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "pages": [
+        "pages/poster/poster",
+        "pages/poster/postereditor/postereditor",
+        "pages/poster/posterlist/posterlist",
+        "pages/poster/postershare/postershare",
+        "pages/shop/shop",
+        "pages/shop/shopdetail/shopdetail",
+        "pages/shop/shopjoin/shopjoin",
+        "pages/shop/shopjoin/shopcat/shopcat",
+        "pages/login/login",
+        "pages/mine/mine",
+        "pages/mine/mineshop/mineshop",
+        "pages/mine/minecollect/minecollect"
+    ],
+    "window": {
+        "backgroundColor": "#F6F6F6",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#336699",
+        "navigationBarTitleText": "商铺海报",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "color": "#bfbfbf",
+        "backgroundColor": "white",
+        "borderStyle": "#000080",
+        "list": [{
+                "text": "海报",
+                "pagePath": "pages/poster/poster",
+                "iconPath": "images/bar_home.png",
+                "selectedIconPath": "images/bar_home_black.png"
+            },
+
+            {
+                "text": "商铺",
+                "pagePath": "pages/shop/shop",
+                "iconPath": "images/bar_poster_black.png",
+                "selectedIconPath": "images/bar_poster.png"
+            },
+            {
+                "text": "我的",
+                "pagePath": "pages/mine/mine",
+                "iconPath": "images/bar_mine_black.png",
+                "selectedIconPath": "images/bar_mine.png"
+            }
+        ]
+    },
+
+    "debug": true
+}

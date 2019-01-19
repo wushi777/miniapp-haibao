@@ -1,0 +1,22 @@
+<view class="tipinput-container" hidden="{{!isShow}}">
+
+  <view class="tipinput-gray-screen" bindtap="hideTipInput"></view>
+
+  <view class="tipinput-content">
+    <view class="tipinput-content-head">
+      <image class="tipinput-content-close" src="/images/remove.png" bindtap="onClose" />
+      <view class="tipinput-content-title">请输入文字
+        <label class="tipinput-content-maxlengthtip">{{maxLengthTip}}</label>
+      </view>
+      <view class="tipinput-content-btn-container">
+        <view class="tipinput-content-clear" bindtap="onClear">清空</view>
+        <view class="tipinput-content-ok" bindtap="onOK">确定</view>
+      </view>
+    </view>
+  
+    <view class="tipinput-text-container">
+      <textarea class="tipinput-text" value="{{contentText}}" maxlength="{{textMaxLength}}" bindinput="onContentInput" />
+    </view>
+
+  </view>
+</view>

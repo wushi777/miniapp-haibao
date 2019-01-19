@@ -1,0 +1,52 @@
+<view class="shop-detail-head">
+    <image class="shop-detail-logo" src="{{logoUrl}}"/>
+    <view class="shop-detail-shopname-container">
+        <view class="shop-detail-shopname">{{shopName}}</view>
+        <view class="shop-detail-collect">收藏</view>
+    </view>
+</view>
+
+
+<view class="shop-detail-body">
+    <view class="shop-detail-share-container" bindtap="onShowTipDialog">
+        <image class="shop-detail-share-img" src="/images/share.png"></image>
+        <view class="shop-detail-share-caption">分享</view>
+    </view>
+
+    <view class="shop-detail-address-container">
+        <view class="shop-detail-address">{{shopAddress}}</view>
+        <image class="shop-detail-address-img" src="/images/location.png" bindtap='onViewLocation'/>
+    </view>
+
+    <view class="shop-detail-contact-container">
+        <image class="shop-detail-contact-logo" src="{{logoUrl}}" />
+        <view class="shop-detail-contact-desc">
+            <view class="shop-detail-contact-desc1">欢迎光临</view>
+            <view class="shop-detail-contact-desc2">点击右侧按钮咨询店主</view>
+        </view>
+        <image class="shop-detail-contact-phonenumber" src="/images/tel.png" bindtap="onCallPhone" />
+    </view>
+
+    <view class="shop-detail-shopdesc-container">
+        <view class="shop-detail-shopdesc-title">--店铺介绍--</view>
+        <view class="hr"></view>
+        <text class="shop-detail-shopdesc">{{shopDesc}}</text>
+        <block wx:for="{{shopImages}}" wx:key="key">
+            <image class="shop-detail-shopdesc-image" src="{{item}}" mode="widthFix" />
+        </block>
+    </view>
+    
+    <view class="shop-detail-shopqrcode-container">
+        <image class="shop-detail-shopqrcode-img" src="{{shopQrCode}}"/>
+    </view>
+</view>
+
+<view class="shop-detail-footer">
+    <TipDialog id="TipDialog" btnOneCaption="分享好友/群" btnOneImageUrl="/images/share-wechat.png" btnOneOpenType="share" btnTwoCaption="生成图文海报" btnTwoImageUrl="/images/share-shop.png" btnTwoOpenType="" bind:btnOneClickEvent="onWeChatShare" bind:btnTwoClickEvent="onShopShare"></TipDialog>
+    <view class="shop-detail-pic-share-container" hidden="{{!isShowShare}}" bindtap="onHideShare">
+        <canvas class="share-canvas" canvas-id="shareCanvas"></canvas>
+        <image class="share-canvas-img" src="{{canvasImagePath}}" catchtap="onCanvasImageClick" />
+        <view class="shop-detail-pic-share-tip">点击图片保存本地</view>
+        <image class="shop-detail-pic-share-close" src="/images/close.png" />
+    </view>
+</view>

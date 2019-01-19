@@ -1,0 +1,149 @@
+page {
+    background-color: #F3F3F3;
+    height: 100%;
+    font-size: 32rpx;
+    line-height: 1.6;
+}
+
+.shop-join-head {
+    height: 180rpx;
+}
+
+.head-img {
+    height: 100%;
+    width: 100%;
+}
+
+.head-titel {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 180rpx;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.shop-input-container {
+    display: flex;
+    margin: 0 0 4rpx 0;
+    padding: 10rpx;
+    align-items: center;
+    background-color: white;
+}
+
+.shop-input-area-container {
+    display: flex;
+    margin: 0 0 4rpx 0;
+    padding: 10rpx;
+    align-items: flex-start;
+    background-color: white;
+}
+
+.shop-input-lable {
+    margin: 10rpx;
+    width: 150rpx;
+}
+
+.shop-address-location-img {
+    width: 80rpx;
+    height: 80rpx;
+}
+
+.shop-input {
+    width: 540rpx;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.shop-input-short {
+    width: 500rpx;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.shop-input-pic {
+    width: 540rpx;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    display: flex;
+    /* margin: 0;
+    padding: 0; */
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.arrow-right-img {
+    width: 18rpx;
+    height: 32rpx;
+    vertical-align: middle;
+}
+
+.shop-logourl-input {
+    float: left;
+    position: relative;
+    /* margin-right: 9px;
+    margin-bottom: 9px; */
+    width: 150rpx;
+    height: 150rpx;
+    margin: 15rpx;
+    border: 1px solid #ccc;
+}
+
+.shop-logourl-input:before,
+.shop-logourl-input:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #ccc;
+}
+
+.shop-logourl-input:before {
+    width: 4rpx;
+    height: 79rpx;
+}
+
+.shop-logourl-input:after {
+    width: 79rpx;
+    height: 4rpx;
+}
+
+.shop-logourl-input:active {
+    border-color: #999999;
+}
+
+.shop-logourl-input:active:before,
+.shop-logourl-input:active:after {
+    background-color: #999999;
+}
+
+.shop-image-container {
+    width: 150rpx;
+    height: 150rpx;
+    margin: 15rpx;
+    position: relative;
+}
+
+.shop-image {
+    width: 150rpx;
+    height: 150rpx;
+}
+
+.shop-image-remove {
+    float: right;
+    width: 30rpx;
+    height: 30rpx;
+    position: absolute;
+    right: -10rpx;
+    top: -10rpx;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.shop-submit {
+    background-color: rgb(248, 151, 57);
+    color: white;
+}

@@ -1,0 +1,42 @@
+@import "../poster-tmpl/poster.wxss";
+.poster-list-container {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30rpx;
+}
+
+.inner-container {
+    margin: 1 auto 20rpx;
+}
+
+.posterlist-head {
+    padding: 10rpx 20rpx 17rpx;
+}
+
+.slogan {
+    font-size: 24rpx;
+}
+
+.more {
+    float: right;
+}
+
+.more-text {
+    font-size: 24rpx;
+    vertical-align: middle;
+    margin-right: 10rpx;
+    color: #1f4ba5;
+}
+
+.more-img {
+    width: 9rpx;
+    height: 16rpx;
+    vertical-align: middle;
+}
+
+.poster-container {
+    display: flex;
+    white-space: nowrap;
+    height: 342rpx;
+}

@@ -1,0 +1,24 @@
+<view class="tipdialog-container" hidden="{{!isShow}}">
+
+  <view class="tipdialog-gray-screen" bindtap="hideTipDialog"></view>
+
+  <view class="tipdialog-content" animation="{{animationData}}">
+
+    <view class="tipdialog-content-btn1">
+      <button open-type="{{btnOneOpenType}}" id="btnOne"></button>
+      <label class="tipdialog-content-btn1" for="btnOne" bindtap="onBtnOneClick">
+        <image class="tipdialog-content-btn1-img" src="{{btnOneImageUrl}}" />
+        <view class="tipdialog-content-btn1-caption">{{btnOneCaption}}</view>
+      </label>
+    </view>
+
+    <view class="tipdialog-content-btn2">
+      <button open-type="{{btnTwoOpenType}}" id="btnTwo"></button>
+      <label class="tipdialog-content-btn2" for="btnTwo" bindtap="onBtnTwoClick">
+        <image class="tipdialog-content-btn2-img" src="{{btnTwoImageUrl}}" />
+        <view class="tipdialog-content-btn2-caption">{{btnTwoCaption}}</view>
+      </label>
+    </view>
+    
+  </view>
+</view>

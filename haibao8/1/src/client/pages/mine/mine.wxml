@@ -1,0 +1,36 @@
+<view class="userinfo">
+  <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" />
+  <button class="userinfo-register" wx:if="{{!logged}}" bindtap="onUserRegister">注册成为会员</button>
+  <block wx:else>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </block>
+  <!-- <text class="userinfo-nickname">{{userInfo.nickName}}</text> -->
+  <!-- <open-data class="userinfo-avatar" type="userAvatarUrl"></open-data>  
+  <open-data class="userinfo-nickname" type="userNickName"></open-data> -->
+</view>
+
+<view class="mine-container">
+  <view class="mine-item" bindtap="onToMineShop">
+    <text>我的店铺</text>
+  </view>
+
+  <view class="mine-item" bindtap="onToMineCollect">
+    <text>收藏</text>
+  </view>
+
+  <view class="mine-item" bindtap="onToMineContact">
+    <text>咨询客服</text>
+  </view>
+  
+  <view class="mine-item" bindtap="onToMineContact">
+    <text>关注公众号</text>
+  </view>
+
+  <view class="mine-item" bindtap="onToMineContact">
+    <text>我的后台</text>
+  </view>
+   
+  <view class="mine-item" bindtap="onMyQrCode">
+    <text>我的小程序码</text>
+  </view>  
+</view>

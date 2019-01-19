@@ -1,0 +1,11 @@
+{
+    "mongo": {
+        "host": "47.93.21.138",
+        "port": "27017",
+        "database": "mydb",
+        "user": "v2tech",
+        "password": "v2tech",
+        "tablePrefix": "mydb_"
+    },
+    "inited": true
+}

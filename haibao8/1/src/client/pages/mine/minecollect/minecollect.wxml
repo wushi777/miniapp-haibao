@@ -1,0 +1,15 @@
+<import src="../../poster/template/poster-tmpl/poster.wxml"/>
+
+<view class="mine-collect-head">
+</view>
+
+<view class="mine-collect-body">
+    <view class="mine-collect-container">
+            <block wx:for="{{posterList}}" wx:key="key">
+                <template is="posterTemplate" data="{{item}}" />
+            </block>        
+    </view>
+</view>
+
+<view class="mine-collect-footer">
+</view>

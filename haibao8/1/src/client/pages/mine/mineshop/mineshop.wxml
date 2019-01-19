@@ -1,0 +1,35 @@
+<view class="mine-shop-head">
+    <view class="mine-shop-title">
+        <image class="mine-shop-logo" src="{{shopLogoUrl}}" />
+        <text class="mine-shop-shopname">{{shopName}}</text>
+    </view>
+    <view class="mine-shop-data">
+        <view class="mine-shop-data-item">
+            <view>{{shopVisitAllNum}}</view>
+            <view>店铺访问量</view>
+        </view>
+    </view>
+</view>
+
+<view class="mine-shop-body">
+    <view class="mine-shop-set-lable">管理与设置</view>
+
+    <view class="mine-shop-set">
+        <view class="mine-shop-set-item" bindtap="onShopCreateOrEdit">
+            <image class="mine-shop-set-item-logo" src="/images/logo.png" />
+            <view class="mine-shop-set-item-title">{{createShopCaption}}</view>
+        </view>
+        <!-- <view class="mine-shop-set-item">
+            <image class="mine-shop-set-item-logo" src="/images/logo.png" />
+            <view class="mine-shop-set-item-title">发布动态</view>
+        </view> -->
+        <view class="mine-shop-set-item" bindtap="onToShopDetail">
+            <image class="mine-shop-set-item-logo" src="/images/logo.png" />
+            <view class="mine-shop--set-item-title">查看店铺</view>
+        </view>
+    </view>
+</view>
+
+<view class="mine-shop-footer">
+    
+</view>

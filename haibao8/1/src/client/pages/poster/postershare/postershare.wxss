@@ -1,0 +1,46 @@
+page {
+    background-color: #F3F3F3;
+    height: 100%;
+    font-size: 32rpx;
+    line-height: 1.6;
+}
+
+.postershare-body {
+    height: 90%;
+    width: 100%;
+    position: relative;
+}
+
+.postershare-img {
+    height: 100%;
+    width: 100%;
+}
+
+.postershare-footer {
+    height: 10%;
+    width: 100%;
+    background-color: white;
+}
+
+.postershare-footer-container {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.postershare-download,
+.postershare-share {
+    width: 150rpx;
+    height: 55rpx;
+    background-color: rgb(0, 202, 252);
+    border-radius: 30rpx;
+    text-align: center;
+    color: white;
+}
+
+.postershare-btnshare {
+    position: absolute;
+}

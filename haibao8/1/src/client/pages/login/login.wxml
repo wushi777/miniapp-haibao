@@ -1,0 +1,30 @@
+<view class="login-head">
+    <view class="login-titel">注册成为会员,享受更多乐趣！</view>
+</view>
+<view class="login-body">
+    <!-- <view class="userinfo">
+        <view class='userinfo-avatar'>
+            <open-data type='userAvatarUrl' />
+        </view>
+        <open-data type='userNickName' class="userinfo-nickname" />
+        <button class="login-btn" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
+            微信快捷登录
+        </button>
+    </view> -->
+    <swiper class='login-authorize' indicator-dots='{{false}}' previous-margin='75rpx' next-margin='75rpx'>
+        <swiper-item class='login-authorize-item'>
+            <view class='flipper' style='{{ style }}'>
+                <view class='front'>
+                    <button class="login-btn" open-type="getPhoneNumber" bindgetphonenumber="onGetPhoneNumber">
+                        获取手机号
+                    </button>
+                </view>
+                <view class='back'>
+                    <button class="login-btn" open-type="getUserInfo" bindgetuserinfo="onGetUserInfo">
+                        微信快捷登录
+                    </button>
+                </view>
+            </view>
+        </swiper-item>
+    </swiper>
+</view>

@@ -1,0 +1,20 @@
+<import src="../poster-tmpl/poster.wxml" />
+<template name="posterListTemplate">
+    <view class="poster-list-container">
+        <view class="inner-container">
+            <view class="posterlist-head">
+                <text class="slogan">{{item.posterCatName}}</text>
+                <view catchtap="onMorePoster" class="more" data-category="{{item}}">
+                    <text class="more-text">更多</text>
+                    <image class="more-img" src="/images/arrow-right.png"></image>
+                </view>
+            </view>
+        </view>
+
+        <scroll-view class="poster-container" scroll-x bindscrolltolower="onDownRefresh">
+            <block wx:for="{{item.posters.data}}" wx:key="key">
+                <template is="posterTemplate" data="{{item}}" />
+            </block>
+        </scroll-view>
+    </view>
+</template>

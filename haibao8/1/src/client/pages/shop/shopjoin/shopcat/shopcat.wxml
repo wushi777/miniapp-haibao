@@ -1,0 +1,3 @@
+  <block wx:for="{{shopCatList}}" wx:key="key">
+    <view class="shop-cat-item" data-shopcatid="{{item.shopCatID}}" data-shopcatname="{{item.shopCatName}}" bindtap="onItemClick">{{item.shopCatName}}</view>
+  </block>

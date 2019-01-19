@@ -1,0 +1,26 @@
+<import src="./template/posterlist-tmpl/posterlist.wxml" />
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{swiperImgList}}" wx:key="key">
+    <swiper-item>
+      <image class="slide-image" src="{{item.posterSlideUrl}}" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="hr"></view>
+
+<scroll-view class="tag-list" scroll-x>
+  <view class="tag-item" wx:for="{{posterTagList}}" wx:key="key">
+    <button class="tag-btn" bindtap="onTagBtnClick" data-id="{{item.posterCatID}}">
+      {{item.posterCatName}}
+    </button>
+  </view>
+</scroll-view>
+
+<view class="hr-area"></view>
+
+<view class="poster-all-container">
+  <block wx:for="{{posterCatsList}}" wx:key="key">
+    <template is="posterListTemplate" data="{{item}}" />
+  </block>
+</view>

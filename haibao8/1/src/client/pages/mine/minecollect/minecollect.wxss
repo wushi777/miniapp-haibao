@@ -1,0 +1,11 @@
+@import "../../poster/template/poster-tmpl/poster.wxss";
+page {
+    background-color: #F3F3F3;
+    height: 100%;
+    font-size: 32rpx;
+    line-height: 1.6;
+}
+
+.mine-collect-container {
+    margin-top: 18rpx;
+}

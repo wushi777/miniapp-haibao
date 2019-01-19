@@ -1,0 +1,14 @@
+<import src="../template/postgrid-tmpl/postgrid.wxml" />
+<view class="left_menu">
+  <view class="left_menu_list">
+    <view class="left_menu_item {{activeIndex==item.posterCatID?'active':''}}" wx:for="{{allCats}}" wx:key="key" bindtap="changeTab" data-id="{{item.posterCatID}}">
+      {{item.posterCatName}}
+    </view>
+  </view>
+</view>
+
+<view class="right_content">
+  <view class="postGridTemplate">
+    <template is="postGridTemplate" data="{{posterList}}" />
+  </view>
+</view>

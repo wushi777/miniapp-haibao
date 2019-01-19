@@ -1,0 +1,14 @@
+page {
+    background-color: #F3F3F3;
+    height: 100%;
+    font-size: 32rpx;
+    line-height: 1.6;
+}
+
+.shop-cat-item {
+    padding: 10rpx;
+    margin: 2rpx 0;
+    background-color: #FFFFFF;
+    border-radius: 4rpx;
+    overflow: hidden;
+}

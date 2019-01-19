@@ -1,0 +1,27 @@
+@margin:15px;
+body{
+    .dosagemar{
+        margin:     @margin;
+        margin-top: 0px;
+        &>.clearfix>button{
+            float: left;
+            margin-bottom: 15px;
+        }
+        .selecttime {
+            float: right;
+        }
+        .ant-calendar-picker{
+            margin-top: 5px;
+            float: right;
+            margin-bottom: 5px;
+        }
+        table{
+            .ant-table-thead tr>th:nth-child(7),
+            .ant-table-tbody tr>td:nth-child(7),
+            .ant-table-thead tr>th:nth-child(8),
+            .ant-table-tbody tr>td:nth-child(8){
+                text-align: right;
+            }
+        }
+    }   
+}
